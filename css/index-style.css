@@ -17,14 +17,12 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 54px 600px 100px;
+    grid-template-rows: 54px 800px 100px;
 }
 header{
     background-color: black;
     display: grid;
     grid-template-columns: 20% 80%;
-    position: fixed;
-    width: 100%;
 }
 .barra ul{
     display: grid;
@@ -40,4 +38,29 @@ header .logo{
     position: relative;
     top: 7px;
     left: 7px;
+}
+section{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.tracks{
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    padding: 5px;
+}
+.artist{
+    background-color: violet;
+}
+.albums{
+    background-color: teal;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5 1fr);
+    gap: 5px;
+}
+.info{
+    background-color: rgba(48, 48, 48, 0.89);
 }
