@@ -1,0 +1,43 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+ul,ol{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 54px 600px 100px;
+}
+header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position: fixed;
+    width: 100%;
+}
+.barra ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+}
+header .logo{ 
+    height: 70%;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
