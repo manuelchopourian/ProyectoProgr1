@@ -30,7 +30,7 @@ header{
     gap: 5px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 20px;
+    padding-top: 7%;
 }
 header .logo{ 
     height: 60%;
@@ -110,4 +110,48 @@ footer ul{
 .deezer{
     height: 100%;
     margin: auto;
+}
+@media(min-width: 768px){
+    .grid-container{
+        grid-template-rows: 1fr 16fr 1fr
+    }
+    .barra ul{
+        padding-top: 5%;
+    }
+    header .logo{ 
+        height: 60%;
+        left: 30%;
+    }
+    .content{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px;
+        gap: 7px;
+    }
+    .info{
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+    }
+    .info p{
+        font-size: 18px;
+        top: 0px;
+    }
+    h2{
+        bottom: 10px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
+@media(min-width: 1024px){
+    .grid-container{
+        grid-template-rows: 1fr 28fr 1fr
+    }
+    section{
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #myCarousel{
+        display: block;
+        height: 60%;
+    }
 }
