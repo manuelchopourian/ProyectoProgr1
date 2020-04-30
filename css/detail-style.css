@@ -1,7 +1,30 @@
 body{
-    background-color: white;
     margin: 0;
+    animation: bgcolor infinite 20s;
+    background-color: hsla(0, 0%, 29%, 0.89);
+    
 }
+/* @keyframes bgcolor{
+    0%
+    {background: rgb(253, 216, 53);
+    }
+    20%
+    {background: rgb(255, 179, 0);
+    }
+    40%
+    {background: rgb(253, 216, 53);
+    }
+    60%
+    {background: rgb(255, 179, 0);
+    }
+    80%
+    {background: rgb(253, 216, 53);
+    }
+    100%
+    {background: rgb(255, 179, 0);
+    }
+} */
+
 *{
     box-sizing: border-box;
 }
@@ -9,7 +32,7 @@ ul,ol{
     padding: 0;
 }
 li{
-    list-style-type: none;
+   list-style-type: none;
 }
 a{
     text-decoration: none;
@@ -38,4 +61,88 @@ header .logo{
     position: relative;
     top: 7px;
     left: 7px;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100 100 100 100;
+}
+.biografiabb{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    bottom: 970px;
+    left: 30px;
+    color: black;
+    text-align: justify;
+
+}
+
+.badbunnyheader{
+    position: relative;
+    opacity: 100%;
+    width: 100%;
+    height: auto;
+    bottom: 700px;
+    box-sizing: border-box;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 80px;
+    color: black;
+    bottom: 1050px;
+    left: 800px;
+}
+
+
+h3{
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #535c68;
+    bottom: 1000px;
+    left: 30px;
+    font-size: 30px;
+}
+
+ol{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    left: 700px;
+    bottom: 940px;
+    font-size: 26px;
+    line-height: 100px;
+}
+h4{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    bottom: 900px;
+    font-size: 35px;
+    left: 150px;
+}
+.fotoyseguidores{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.albumbadbunny{
+    position: relative;
+    bottom: 1450px;
+    left:80px;
+}
+@media(max-width: 768px){
+
+
+}
+
+@media(max-width: 324px){
+
+    
 }
