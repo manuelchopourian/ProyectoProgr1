@@ -58,9 +58,10 @@ header .logo{
 .buscador{ margin-top: 35px;}
 
 .playlist-container{
-    display: grid;
-    grid-template-columns: 40% 60%;
+    
+    width: 65%;
     padding-top: 150px;
+    margin: auto;
 }
 
 .lista-de-reproducion{
