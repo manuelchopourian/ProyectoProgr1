@@ -63,6 +63,9 @@ header .logo{
     padding-top: 150px;
     margin: auto;
 }
+.bad-bunny{
+    color: turquoise;
+}
 
 .lista-de-reproducion{
 
@@ -150,6 +153,22 @@ text-align: center;
 
     height: 70%;}
 
+    footer{
+        background-color: black;
+        color: gray;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        
+    }
+    footer ul{
+        margin: auto;
+    }
+    .deezer{
+        height: 100%;
+        margin: auto;}
 
      
     
