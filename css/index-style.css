@@ -11,10 +11,6 @@ ul,ol{
 li{
     list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
 .grid-container{
     display: grid;
     grid-template-rows: 1fr 20fr 1fr
@@ -31,6 +27,10 @@ header{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 7%;
+}
+.barra ul li a{
+    text-decoration: none;
+    color: white;
 }
 header .logo{ 
     height: 60%;
@@ -94,6 +94,7 @@ h2{
     color: whitesmoke;
     position: relative;
     bottom: 17px;
+    font-size: 27px;
 }
 footer{
     background-color: black;
@@ -144,14 +145,60 @@ footer ul{
     }
 }
 @media(min-width: 1024px){
+    body{
+        background-color: rgba(54, 54, 54, 0.911) ;
+    }
     .grid-container{
-        grid-template-rows: 1fr 28fr 1fr
+        grid-template-rows: 100px 500px 1200px 100px
+    }
+    .barra ul{
+        padding-top: 40px;
     }
     section{
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin: 0px 40px;
     }
+    .tracks{
+        grid-template-rows: 6% 94%;
+    }
+    .artist{
+        grid-template-rows: 6% 94%;
+    }
+    .albums{
+        grid-template-rows: 6% 94%;
+    }
+    .content{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(10, 1fr);
+        padding: 10px;
+        gap: 5px;
+    }
+    .info{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+        height: 90%;
+        
+    }
+    .info p{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    h2{
+        position: relative;
+        top: 3px;
+        font-size: 30px;
+    }
+    .portadas{
+    height: 95%;
+    border-radius: 5px;
+}
     #myCarousel{
         display: block;
-        height: 70%;
+        width: 100%;
     }
-}
+    #myCarousel img{
+        width: 100%;
+        height: 500px;
+    }
