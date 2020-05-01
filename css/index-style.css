@@ -179,7 +179,6 @@ footer ul{
         grid-template-columns: 30% 70%;
         grid-template-rows: 100%;
         height: 90%;
-        
     }
     .info p{
         font-size: 18px;
@@ -191,9 +190,9 @@ footer ul{
         font-size: 30px;
     }
     .portadas{
-    height: 95%;
-    border-radius: 5px;
-}
+        height: 95%;
+        border-radius: 5px;
+    }
     #myCarousel{
         display: block;
         width: 100%;
@@ -202,3 +201,4 @@ footer ul{
         width: 100%;
         height: 500px;
     }
+}
