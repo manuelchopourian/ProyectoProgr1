@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    background-color: hsla(0, 0%, 29%, 0.89);    
+}
+
+
+*{
+    box-sizing: border-box;
+}
+ul,ol{
+    padding: 0;
+}
+li{
+   list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 54px 600px 326px;
+    min-height: 100%;
+    position: relative;
+}
+header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.barra ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+}
+header .logo{ 
+    height: 70%;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.FotoTonesAndI{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 26%;
+
+}
+
+.nombreartista{
+    font-family: Arial, Helvetica, serif;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    left: 0.5%;
+    top: 7%;
+    text-transform: uppercase;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    
+}
+
+.grid-container{
+    display: grid;
+    height: 100%;
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    display: grid;
+    text-align: right;
+    margin: 0em;
+    padding: 0em;
+    top: 11%;
+    right: 4%;
+    color: transparent;
+    background-image: linear-gradient(to left, black, white, black, white);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+.descripcioncancion{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.elfooter{
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+    height: auto;'
+    left: 0;
+    bottom: 0;
+
+}
+
+footer{
+    background-color: black;
+    color: gray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    
+    
+}
+footer ul{
+    margin: auto;
+}
+.deezer{
+    height: 100%;
+    margin: auto;
+}
+
+@media (min-width: 695px){
+
+    body{
+        height: 100%;
+    }
+
+
+    .nombreartista{
+            left: 5.5%;
+            top: 8%;
+            font-size: 56px;
+    }
+
+    h2{
+        top: 17%;
+        right: 4%;
+        font-size: 48px;
+
+    }
+    
+    .grid-container{
+        grid-template-rows: 1fr;
+
+    }
+
+
+}
+
+@media (min-width: 1024px){
+        
+    .nombreartista{
+        font-size: 90px;
+        left: 5 %;
+        top: 8%;
+    }
+
+    h2{
+        top: 14%;
+        right: 4%;
+        font-size: 100px;
+    }
+
+    .descripcioncancion{
+        font-size: 29px;
+    }
+
+    .footer{
+        background-color: black;
+        color: gray;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        text-align: center;
+    }
+}

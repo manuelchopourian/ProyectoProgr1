@@ -1,0 +1,100 @@
+body{
+    background-color: hsla(0, 0%, 29%, 0.89);
+    margin: 0;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+ul,ol{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 20fr 1fr
+}
+header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.barra ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 7%;
+}
+.barra ul li a{
+    text-decoration: none;
+    color: white;
+}
+header .logo{ 
+    height: 60%;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    left: 15%;
+}
+
+.afterhoursalbum{
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+
+.afterhourspalabra{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-right: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.ALBUM{
+    grid-template-rows: 1fr 1fr;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    color: gray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+footer ul{
+    margin: auto;
+}
+.deezer{
+    height: 100%;
+    margin: auto;
+}
