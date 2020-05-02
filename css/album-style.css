@@ -14,7 +14,8 @@ li{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 1fr 20fr 1fr
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: darkred;
 }
 header{
     background-color: black;
@@ -50,13 +51,15 @@ header .logo{
 }
 
 .afterhourspalabra{
-    color: red;
+    color: darkred;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     margin-right: 10px;
     position: absolute;
     width: 100%;
     text-align: center;
+    bottom: 0%;
+    font-weight: 700;
 }
 
 .ALBUM{
@@ -65,22 +68,29 @@ header .logo{
 
 }
 
+.theweekndnombre{
+    position: absolute;
+    color: black;
+    top: 19.5%;
+    left: 9%;
+    font-size: 52px;
+    font-weight: 700;
 
 
+}
+
+.descripcionalbum{
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 footer{
     background-color: black;
@@ -97,4 +107,115 @@ footer ul{
 .deezer{
     height: 100%;
     margin: auto;
+}
+
+.tracklist{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    background-color: darkred;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 8px;
+
+}
+
+
+@media(min-width: 600px){
+
+    .theweekndnombre{
+        text-align: center;
+        left: 14%;
+        top: 24%;
+        font-size: 64px;
+    }
+
+    .afterhourspalabra{
+        font-size: 63px;
+        bottom: -64%;
+    }
+
+    .descripcionalbum{
+        font-size: 26px;
+    }
+
+}
+
+@media(min-width: 768px){
+
+    .theweekndnombre{
+        font-size: 84.5px;
+        left: 13.5%;
+        top: 26%;
+    }
+
+    .afterhourspalabra{
+        font-size: 96px;
+        bottom: -106%;
+
+    }
+
+    .tracklist{
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .Tracks{
+        font-size: 56px;
+        color: black;
+        font-weight: 700;
+        text-align: left;
+        margin-left: 6%;
+    }
+}
+
+@media(min-width: 1024px){
+    
+    .theweekndnombre{
+        font-size: 112px;
+        top: 30%;
+        left: 13.5%;
+    }
+
+    .afterhourspalabra{
+        font-size: 125px;
+        bottom: -162%;
+
+    }
+
+    .descripcionalbum{
+        font-size: 30px;
+    }
+
+    .tracklist{
+        font-size: 52px;
+        line-height: 2;
+
+    }
+
+}
+
+@media(min-width: 1440px){
+
+    .theweekndnombre{
+        font-size: 157px;
+        top: 18%;
+        left: 16%;
+    }
+
+    .afterhourspalabra{
+        font-size: 160px;
+        bottom: -60%;
+    }
+
+    .descripcionalbum{
+        font-size: 36px;
+    }
+
+
 }
