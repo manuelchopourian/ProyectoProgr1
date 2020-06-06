@@ -11,6 +11,10 @@ ul,ol{
 li{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .grid-container{
     display: grid;
     grid-template-rows: 1fr 20fr 1fr
@@ -27,10 +31,6 @@ header{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 7%;
-}
-.barra ul li a{
-    text-decoration: none;
-    color: white;
 }
 header .logo{ 
     height: 60%;
@@ -62,7 +62,21 @@ section{
     display: grid;
     grid-template-rows: 10% 90%;
 }
-.content{
+.content-tracks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5 1fr);
+    gap: 5px;
+    padding: 7px;
+}
+.content-album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5 1fr);
+    gap: 5px;
+    padding: 7px;
+}
+.content-artist{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5 1fr);
@@ -76,11 +90,11 @@ section{
     grid-template-columns: 40% 60%;
     text-align: center;
 }
-.info p{
-    font-size: 15px; 
+.info a{
+    font-size: 12px; 
     color: white;
     position: relative;
-    top: 15%;
+    top: 12%;
 
 }
 .portadas{
@@ -123,7 +137,19 @@ footer ul{
         height: 60%;
         left: 30%;
     }
-    .content{
+    .content-tracks{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px;
+        gap: 7px;
+    }
+    .content-album{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px;
+        gap: 7px;
+    }
+    .content-artist{
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding: 10px;
@@ -133,8 +159,8 @@ footer ul{
         grid-template-columns: 100%;
         grid-template-rows: 80% 20%;
     }
-    .info p{
-        font-size: 18px;
+    .info a{
+        font-size: 13px;
         top: 0px;
     }
     h2{
@@ -169,7 +195,19 @@ footer ul{
     .albums{
         grid-template-rows: 6% 94%;
     }
-    .content{
+    .content-tracks{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(10, 1fr);
+        padding: 10px;
+        gap: 5px;
+    }
+    .content-artist{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(10, 1fr);
+        padding: 10px;
+        gap: 5px;
+    }
+    .content-album{
         grid-template-columns: 100%;
         grid-template-rows: repeat(10, 1fr);
         padding: 10px;
@@ -180,9 +218,9 @@ footer ul{
         grid-template-rows: 100%;
         height: 90%;
     }
-    .info p{
+    .info a{
         font-size: 18px;
-        margin-top: 30px;
+        margin-top: 25px;
     }
     h2{
         position: relative;
