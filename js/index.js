@@ -1,5 +1,6 @@
 let proxy = "https://cors-anywhere.herokuapp.com/";
 let url = proxy + 'https://api.deezer.com/chart/0/';
+
 let canciones = url + 'tracks'
 let artistas = url + 'artists'
 let albumes = url + 'albums'

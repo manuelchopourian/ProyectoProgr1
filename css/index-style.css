@@ -17,7 +17,7 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 1fr 20fr 1fr
+    grid-template-rows: 56px 40px 1122px 56px
 }
 header{
     background-color: black;
@@ -95,7 +95,9 @@ section{
     color: white;
     position: relative;
     top: 12%;
-
+}
+.info a:hover{
+    text-decoration: none;
 }
 .portadas{
     width: 90%;
@@ -126,9 +128,20 @@ footer ul{
     height: 100%;
     margin: auto;
 }
+.buscador{
+    background-color: rgba(73, 73, 73, 0.89);
+    text-align: center;
+}
+.botones{
+    position: relative;
+    top: 7px;
+}
+.botones button{
+    border-radius: 5px;
+}
 @media(min-width: 768px){
     .grid-container{
-        grid-template-rows: 1fr 16fr 1fr
+        grid-template-rows: 80px 40px 1284px 90px
     }
     .barra ul{
         padding-top: 5%;
@@ -160,7 +173,7 @@ footer ul{
         grid-template-rows: 80% 20%;
     }
     .info a{
-        font-size: 13px;
+        font-size: 12px;
         top: 0px;
     }
     h2{
@@ -169,13 +182,16 @@ footer ul{
     footer{
         font-size: 15px;
     }
+    .botones{
+        top: 12px;
+    }
 }
 @media(min-width: 1024px){
     body{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
     .grid-container{
-        grid-template-rows: 100px 500px 1200px 100px
+        grid-template-rows: 100px 500px 40px 1200px 100px
     }
     .barra ul{
         padding-top: 40px;
@@ -239,4 +255,5 @@ footer ul{
         width: 100%;
         height: 500px;
     }
+    
 }
