@@ -17,7 +17,7 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 56px 40px 50px 1122px 56px;
+    grid-template-rows: 56px 40px 50px 2500px 56px;
     background-color: rgba(73, 73, 73, 1);
 }
 header{
@@ -46,12 +46,43 @@ header .logo{
 .search{
     background-color: rgba(73, 73, 73, 0.89);
     text-align: center;
+    display: none;
+    grid-template-rows: repeat(3, 1fr);
 }
-.search-results{
+.tracks{
+    display: grid;
+    grid-template-rows: 7% 93%;
+}
+.artist{
+    display: grid;
+    grid-template-rows: 7% 93%;
+}
+.album{
+    display: grid;
+    grid-template-rows: 7% 93%;
+}
+.tracks-search-results{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 7px;
+}
+.artist-search-results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 7px;
+}
+.album-search-results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 7px;
+}
+.spinner{
+    height: 100px;
+    position: relative;
+    left: 45%;
 }
 .info{
     background-color: rgba(37, 223, 207, 0.726);
@@ -115,7 +146,7 @@ footer ul{
 }
 @media(min-width: 768px){
     .grid-container{
-        grid-template-rows: 80px 40px 70px 1284px 90px
+        grid-template-rows: 80px 40px 70px 3000px 90px
     }
     .barra ul{
         padding-top: 5%;
@@ -124,11 +155,29 @@ footer ul{
         height: 60%;
         left: 30%;
     }
-    .search-results{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+    .search{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 100%;
         gap: 5px;
         padding: 7px;
+    }
+    .tracks{
+        grid-template-rows: 7% 93%;
+    }
+    .artist{
+        grid-template-rows: 7% 93%;
+    }
+    .album{
+        grid-template-rows: 7% 93%;
+    }
+    .tracks-search-results{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .artist-search-results{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .album-search-results{
+        grid-template-columns: repeat(5, 1fr);
     }
     .info{
         grid-template-columns: 100%;
@@ -153,20 +202,33 @@ footer ul{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
     .grid-container{
-        grid-template-rows: 100px 500px 40px 70px 1200px 100px
+        grid-template-rows: 100px 500px 40px 70px 1250px 100px
     }
     .barra ul{
         padding-top: 40px;
     }
-    section{
-        grid-template-rows: 100%;
+    .search{
+        text-align: center;
         grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
-        margin: 0px 30px;
     }
-   .search-results{
-       gap: 10px;
-   }
+    .tracks{
+        grid-template-rows: 7% 93%;
+    }
+    .artist{
+        grid-template-rows: 7% 93%;
+    }
+    .album{
+        grid-template-rows: 7% 93%;
+    }
+    .tracks-search-results{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .artist-search-results{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .album-search-results{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .info{
         grid-template-columns: 30% 70%;
         grid-template-rows: 100%;
