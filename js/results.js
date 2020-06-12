@@ -19,7 +19,7 @@ fetch(url)
         let resultados = datos.data;
        
         resultados.forEach(function(resultado){
-            results.innerHTML += '<li class="info">' + '<img src="' + resultado.album.cover +'" class="portadas">' +'<a href="detail.html?id=' +  resultado.album.id + '">' + resultado.album.title + '</a></li>' 
+            results.innerHTML += '<li class="info">' + '<img src="' + resultado.album.cover +'" class="portadas">' +'<a href="detail.html?id=' +  resultado.id + '">' + resultado.title_short + '</a></li>'     
         });
         console.log(resultados)   
         })
