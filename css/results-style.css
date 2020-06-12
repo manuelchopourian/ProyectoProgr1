@@ -17,7 +17,8 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 56px 40px 1122px 56px
+    grid-template-rows: 56px 40px 50px 1122px 56px;
+    background-color: rgba(73, 73, 73, 1);
 }
 header{
     background-color: black;
@@ -39,47 +40,16 @@ header .logo{
     top: 15%;
     left: 15%;
 }
-section{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    text-align: center;
-}
 #myCarousel{
     display: none;
 }
-.tracks{
+.search{
     background-color: rgba(73, 73, 73, 0.89);
-    display: grid;
-    grid-template-rows: 10% 90%;
+    text-align: center;
 }
-.artist{
-    background-color: rgba(73, 73, 73, 0.89);
-    display: grid;
-    grid-template-rows: 10% 90%;
-}
-.albums{
-    background-color: rgba(73, 73, 73, 0.89);
-    display: grid;
-    grid-template-rows: 10% 90%;
-}
-.content-tracks{
+.search-results{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5 1fr);
-    gap: 5px;
-    padding: 7px;
-}
-.content-album{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5 1fr);
-    gap: 5px;
-    padding: 7px;
-}
-.content-artist{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5 1fr);
     gap: 5px;
     padding: 7px;
 }
@@ -87,16 +57,17 @@ section{
     background-color: rgba(37, 223, 207, 0.726);
     border-radius: 7px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     text-align: center;
+    height: auto;
 }
 .info a{
     font-size: 12px; 
     color: white;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 2px;
 }
 a:hover{
     text-decoration: none;
@@ -105,14 +76,15 @@ a:hover{
     width: 90%;
     border-radius: 5px;
     margin: auto;
+    padding: 2px;
 }
 h2{
-    padding-left: 5px;
+    background-color: rgba(73, 73, 73, 0.89);
     font-family: 'Barlow Condensed', sans-serif;
     color: whitesmoke;
-    position: relative;
-    bottom: 17px;
     font-size: 27px;
+    text-align: center;
+    position: relative;
 }
 footer{
     background-color: black;
@@ -143,7 +115,7 @@ footer ul{
 }
 @media(min-width: 768px){
     .grid-container{
-        grid-template-rows: 80px 40px 1284px 90px
+        grid-template-rows: 80px 40px 70px 1284px 90px
     }
     .barra ul{
         padding-top: 5%;
@@ -152,27 +124,19 @@ footer ul{
         height: 60%;
         left: 30%;
     }
-    .content-tracks{
+    .search-results{
+        display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 10px;
-        gap: 7px;
-    }
-    .content-album{
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 10px;
-        gap: 7px;
-    }
-    .content-artist{
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 10px;
-        gap: 7px;
+        gap: 5px;
+        padding: 7px;
     }
     .info{
         grid-template-columns: 100%;
-        grid-template-rows: 80% 20%;
+        grid-template-rows: 75% 25%;
+    }
+    .info a{
+        align-items:  center;
+        padding: 0 2px;
     }
     h2{
         bottom: 10px;
@@ -189,7 +153,7 @@ footer ul{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
     .grid-container{
-        grid-template-rows: 100px 500px 40px 1200px 100px
+        grid-template-rows: 100px 500px 40px 70px 1200px 100px
     }
     .barra ul{
         padding-top: 40px;
@@ -198,39 +162,15 @@ footer ul{
         grid-template-rows: 100%;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
-        margin: 0px 40px;
+        margin: 0px 30px;
     }
-    .tracks{
-        grid-template-rows: 6% 94%;
-    }
-    .artist{
-        grid-template-rows: 6% 94%;
-    }
-    .albums{
-        grid-template-rows: 6% 94%;
-    }
-    .content-tracks{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(10, 1fr);
-        padding: 10px;
-        gap: 5px;
-    }
-    .content-artist{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(10, 1fr);
-        padding: 10px;
-        gap: 5px;
-    }
-    .content-album{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(10, 1fr);
-        padding: 10px;
-        gap: 5px;
-    }
+   .search-results{
+       gap: 10px;
+   }
     .info{
         grid-template-columns: 30% 70%;
         grid-template-rows: 100%;
-        height: 90%;
+        height: 80px;
     }
     .info a{
         font-size: 18px;
