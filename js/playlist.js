@@ -1,13 +1,18 @@
 
+
+            
+
 let recuperoStorage = localStorage.getItem('playlist');
 let playlist = JSON.parse(recuperoStorage);
 
-let playlistwrapper = document.querySelector('.lista-de-reproduccion')
+let playlistwrapper = document.querySelector('.listadereproduccion')
+let body = document.querySelector('.playlist-container')
 
 if(recuperoStorage == null || recuperoStorage == '[]'){
 
     playlist =[]
     playlistwrapper.innerHTML += '<h1> Actualmente no hay canciones en tu playlist </h1>'
+    body.style.height = '600px'
     }
     
     else{
@@ -53,10 +58,13 @@ boton.onclick = function(){
 
     let confirmar = confirm('¿Estas Seguro? Todas las canciones seran eliminadas de tu playlist')
     if(confirmar == true){
-        localStorage.clear('playlist')
+        localStorage.removeItem('playlist')
 
 
     }
 
 
 }
+
+
+console.log(localStorage);
