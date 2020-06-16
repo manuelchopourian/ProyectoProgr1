@@ -31,7 +31,7 @@ header{
     gap: 5px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 7%;
+    padding-top: 6.5%;
 }
 header .logo{ 
     height: 60%;
@@ -81,8 +81,13 @@ header .logo{
 }
 .spinner{
     height: 100px;
+    display: flex;
+    justify-content: center;
     position: relative;
-    left: 45%;
+    top: 20px;
+}
+.spinner img{
+    height: 90%;
 }
 .info{
     background-color: rgba(37, 223, 207, 0.726);

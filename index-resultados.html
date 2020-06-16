@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/results-style.css">
+  <link rel="stylesheet" href="css/index-results-style.css">
   <title>Results</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
               <ul>
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="playlist.html">PLAYLIST</a></li>
-                  <li><a href="">GENRES</a></li>
+                  <li><a href="genres.html">GENRES</a></li>
               </ul>
           </nav>
       </header>
@@ -74,14 +74,16 @@
           </a>
           </div>
       </div>
-      <form action="resultados.html" method="GET" class="buscador">
+      <form action="index-resultados.html" method="GET" class="buscador">
         <div class="botones">
         <input type="text" name="search" placeholder="¿Que estas buscando?">
         <button type="submit">Buscar</button>
       </div>
     </form>
       <h4>Resultados de tu busqueda</h4>
-      <img src="img/spinner-gif.gif" alt="spin" class="spinner">
+      <div class="spinner">
+      <img src="img/spinner-gif.gif" alt="spin">
+    </div>
       <section class="search">
               <article class="tracks">
                 <h2>Tracks</h2>
@@ -110,6 +112,6 @@
       </footer>
   </div>
 
-  <script src="js/results.js"></script>
+  <script src="js/index-results.js"></script>
 </body>
 </html>
