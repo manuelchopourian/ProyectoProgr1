@@ -169,9 +169,145 @@ text-align: center;
     .deezer{
         height: 100%;
         margin: auto;}
-
-     
-    
-
-
-
+        .crear{
+            background-color: #00e8dc;
+            border-radius: 25px ;
+            border: none;
+        }
+        
+        .body-playlist{
+            margin: unset;
+        }
+        
+        .playlist-container{
+        
+            height: fit-content;
+            display: grid;
+        padding-top: 130px;
+        height: 100%;
+        
+        
+        }
+        
+        .container-playlist{
+        
+            width: fit-content;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+           
+        
+        
+        border: solid;
+        }
+        
+        .listadereproducion{
+        
+        
+        padding-top: 130px;
+        height: 200px;
+        }
+        
+        .agregar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        }
+        
+        .agregar1{
+            text-align: center;
+        
+        }
+        
+        .cancion{
+            width: 60%;
+            display: grid;
+            background-color: rgba(5, 5, 5, 0.678);
+            color: #00e8dcab;
+            grid-template-columns: 1fr 3fr;
+            gap: 5px;
+            position: relative;
+            left: 20%;
+            height: 150px;
+        }
+        
+        .foto-playlist{
+            object-fit: cover;
+           width: 100%;
+           height: 110px;
+        }
+        
+        .foto-cancion{
+            padding: 20px;
+            width: 100%;
+            height: 150px;
+            box-sizing: border-box;
+        }
+        
+        .texto-cancion{
+           display: grid;
+           grid-template-rows: 1fr 1fr 1fr ;
+        
+            margin: 10px;
+        }
+        
+        
+        
+        .titulo-cancion{
+            text-align: center;
+        }
+        
+        .titulo-cancion2{
+            color:  #00e8dc;
+        text-decoration: unset;
+        font-size: 20px;
+        }
+        
+        
+        .ArtistasyAlbum{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        
+        }
+        
+        .artista{
+            font-size: 13px;
+            text-align: center;
+            text-decoration: none;
+            color:  #00e8dc ;
+        }
+        
+        .album{
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        
+        .Audio-Add{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 6px;
+        }
+        
+        
+        .add-playlist{
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .boton{
+        
+            background-color: #00e8dc;
+            border-radius: 25px ;
+            border: none;
+            width: 300px;
+            margin: 20px;
+            height: 30px;
+        }
+        
+        .cancion-audio{
+        
+            height: 70%;
+            
+        }
