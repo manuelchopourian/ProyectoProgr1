@@ -115,7 +115,15 @@ h2{
     color: whitesmoke;
     font-size: 27px;
     text-align: center;
+}
+h4{
+    color: rgb(168, 168, 168);
+    text-align: center;
+    font-size: 23px;
     position: relative;
+    top: 30%;
+
+    
 }
 footer{
     background-color: black;
