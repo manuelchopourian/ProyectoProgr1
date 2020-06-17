@@ -13,5 +13,15 @@ fetch(artistas)
     .then(function(resultado){
         let nombre = resultado.data
         let h2 = document.querySelector("h2")
-        h2.innerText = resultado.name
+        h2.innerHTML += resultado.name
+    })
+
+    fetch(seguidores)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(resultado){
+        let nombre = resultado.data
+        let h3 = document.querySelector("h3")
+        h3.innerText += resultado.nb_fan
     })
