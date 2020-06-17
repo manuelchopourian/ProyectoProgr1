@@ -1,5 +1,6 @@
 
-
+let proxy = "https://cors-anywhere.herokuapp.com/";
+let url = proxy + 'https://api.deezer.com/genre';
             
 
 let recuperoStorage = localStorage.getItem('playlist');
