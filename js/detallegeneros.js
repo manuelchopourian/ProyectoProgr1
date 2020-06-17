@@ -54,7 +54,7 @@ fetch(urlgener)
 
     
 
-    lafoto = ladata.picture_medium
+    lafoto = ladata.picture_xl
     
     
     eltitulo = ladata.name
@@ -65,7 +65,7 @@ fetch(urlgener)
     let titulo = document.querySelector('.titulo-gener')
     
 
-    foto.innerHTML += '<img  src="'+ lafoto +'" >'
+    foto.innerHTML += '<img  src="'+ lafoto +'" class="portadas">'
 
     titulo.innerHTML +=  eltitulo 
    

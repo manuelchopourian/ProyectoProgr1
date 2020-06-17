@@ -30,7 +30,7 @@ header{
     gap: 5px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 2%;
+    padding-top: 6.5%;
     font-size: 14px;
 }
 header .logo{ 
@@ -46,44 +46,57 @@ section{
     display: grid;
     grid-template-rows: 4% 96%;
 }
-.generos{
+.genere-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7px;
-    margin: 5px;}
-.info{
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 95% 5%;
-    text-align: center;
-}
-.nombre{
-    font-size: 12px;
-    color: white;
-    position: relative;
-    bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-
+    margin: 5px;
 }
 a:hover{
     text-decoration: none;
     color: whitesmoke;
 }
 .portadas{
-    width: 100%;
-    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    border: solid 3px rgba(37, 223, 207, 0.726);
     position: relative;
     bottom: 5px;
-    border: solid 3px rgba(37, 223, 207, 0.726);
+
 }
-h2{
+h1{
     padding-left: 5px;
     padding-top: 3.5%;
     font-family: 'Barlow Condensed', sans-serif;
     color: whitesmoke;
     position: relative;
     bottom: 17px;
-    font-size: 27px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.artistas{
+    display: grid;
+    grid-template-rows: 15% 85%;
+    position: relative;
+    top: 30px;
+}
+.mejores{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(108, 238, 227);
+}
+h3{
+    position: relative;
+    bottom: 5px;
+
+}
+.lista-gener{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 2px;
+    position: relative;
+    top: 10px;
 }
 footer{
     background-color: black;
@@ -114,44 +127,40 @@ footer ul{
 }
 @media(min-width: 768px){
     .grid-container{
-        grid-template-rows: 80px 1610px 90px
+        grid-template-rows: 80px 900px 90px
     }
     .barra ul{
-        padding-top: 3.1%;
+        padding-top: 5%;
     }
     header .logo{ 
         height: 60%;
         left: 30%;
     }
-    .generos{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        margin: 8px;
-        position: relative;
-    }
-    .info{
-        grid-template-columns: 100%;
-        grid-template-rows: 90% 10%;
-        height: 180px;
-    }
     .portadas{
         position: relative;
         top: 10px;
+        width: 50%;
+        margin: auto;
     }
-    .nombre{
-        align-items:  center;
-        padding: 0 2px;
-        font-size: 14px;
-        position: relative;
-        top: 35px;
-    }
-    h2{
-        padding-top: 1%;
-        font-size: 30px;
-    }
+    
     footer{
         font-size: 15px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h3{
+        font-size: 26px;
+        position: relative;
+        bottom: 10px;
+    }
+    .decoracion-artista{
+        font-size: 18px;
+        position: relative;
+        bottom: 25px;
+    }
+    .lista-gener{
+        top: 25px;
     }
 }
 @media(min-width: 1024px){
@@ -159,31 +168,29 @@ footer ul{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
     .grid-container{
-        grid-template-rows: 100px 1750px 100px
+        grid-template-rows: 100px 1400px 100px
     }
     .barra ul{
-        padding-top: 4.4vh;
-    }
-    .generos{
-        grid-template-columns: repeat(5, 1fr);
-        margin: 0px 15px;
-        gap: 0px 15px;
-    }
-    .info{
-        grid-template-rows: 90% 10%;
-        height: 250px;
-
-    }
-    .nombre{
-        position: relative;
-        top: 5px;
-    }
-    h2{
-        padding-top: 1%;
-        font-size: 30px;
+        padding-top: 6vh;
     }
     .portadas{
-        height: 95%;
+        width: 50%;
+        margin: auto;
         border-radius: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .decoracion-artista{
+        font-size: 22px;
+        position: relative;
+        top: 0px;
+    }
+    .lista-gener{
+        gap:10px;
+        top: 0px;
     }
 }

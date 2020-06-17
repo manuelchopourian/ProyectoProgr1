@@ -3,67 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/detallegenero-style.css">
     <title>Generos</title>
 </head>
 <body>
 
+<div class="grid-container">
     <header>
         <img src="img/logo.jpg" alt="pi musica" class="logo">
-
      <nav class="barra">
          <ul>
              <li><a href="index.html">HOME</a></li>
              <li><a href="playlist.html">PLAYLIST</a></li>
-             <li><a href="">GENRES</a></li>
+             <li><a href="genres.html">GENRES</a></li>
          </ul>
      </nav>
-     <form action="index-resultados.html" method="GET" class="buscador">
-        <div class="botones">
-        <input type="text" name="search" placeholder="¿Que estas buscando?">
-        <button type="submit">Buscar</button>
- </header>
-
-
- <div class="genre-container">
-
-
-    <div class="contenido-genre">
-
-        <div class="dentro-genre">
-
-            <div> <h1 class="titulo-gener"></h1></div>
-          
-            <div class="foto-gener"> </div>
-
-        </div>
-
-        <div class="titulo-genre">
-            <div>
-                <h3 class="mejores">Mejores Artistas</h3>
-                <ul class="lista-gener">
-                     
-                </ul>
+    </header>
+    <section class="genre-container">
+        <div class="contenido-genre">
+            <div class="dentro-genre">
+                <div>
+                    <h1 class="titulo-gener"></h1>
+                </div>
+                <div class="foto-gener"> 
+                </div>
             </div>
 
+        <div class="artistas">
+                <h3 class="mejores">Mejores Artistas</h3>
+                <ul class="lista-gener">
+                </ul>
         </div>
-
-    
-
-    </div>
-    
+    </section>
+    <footer>
+        <ul>
+            <li>Andy Cheb</li>
+            <li>Diogenes Blaquier</li>
+            <li>Manuel Chopourian</li>
+        </ul>
+        <img src="img/deezer.jpg" alt="deezer" class="deezer">
+        <div class="iconos">
+            <i class="fab fa-instagram"> @PI.Music</i>
+            <i class="fab fa-twitter"> @PI.Music</i>
+            <i class="fab fa-facebook-square"> PI.Music</i>
+            </div>
+    </footer>
 </div>
 
 
 
- </div>
 
 
 
 
 
-
-
-
-    <script src="./js/detallegeneros.js"></script>
+    <script src="js/detallegeneros.js"></script>
 </body>
 </html>
