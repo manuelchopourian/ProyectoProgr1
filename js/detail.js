@@ -30,11 +30,11 @@ fetch(url)
 
                 let artist = document.querySelector('.detalle-artist');
                 artist.innerHTML += 'Artist: ' + track.artist.name;
-                artist.href = 'detalle.html?id=' + track.artist.id + '&type=' + track.artist.type;
+                artist.href = 'detail.html?id=' + track.artist.id + '&type=' + track.artist.type;
 
                 let album = document.querySelector('.detalle-album');
                 album.innerHTML += 'Album: ' + track.album.title;
-                album.href = 'detalle.html?id=' + track.album.id + '&type=' + track.album.type;
+                album.href = 'detail.html?id=' + track.album.id + '&type=' + track.album.type;
                 let player = document.querySelector('iframe');
                 player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=3000&height=350&color=00e8dc&layout=dark&size=medium&type=tracks&id=' + trackId + '&app_id=1'
 
