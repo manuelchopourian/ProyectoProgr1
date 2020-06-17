@@ -1,4 +1,5 @@
 
+ console.log('hola');
 
 let queryString = location.search;
 
