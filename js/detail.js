@@ -1,12 +1,8 @@
-
- 
-
 let queryString = location.search;
-
 let queryStringObj = new URLSearchParams(queryString);
 
 let trackId = queryStringObj.get('id');
-let type = queryStringObj.get('type')
+let type = queryStringObj.get('search')
 console.log(type);
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url =  proxy + "https://api.deezer.com/" + type + "/" + trackId;

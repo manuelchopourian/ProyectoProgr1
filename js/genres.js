@@ -10,7 +10,7 @@ fetch(url)
         let resultados = datos.data;
         console.log(resultados)
         resultados.forEach(function(genre){
-            generos.innerHTML += '<li class="info">' + '<a href="detail.html?id=' +  genre.id + '">' +  '<img src="' + genre.picture_big +'" class="portadas">' + '</a>'  +'<a href="detail.html?id=' +  genre.id + '" class="nombre">' + genre.name + '</a></li>'
+            generos.innerHTML += '<li class="info">' + '<a href="detallegenero.html?id=' +  genre.id + '">' +  '<img src="' + genre.picture_big +'" class="portadas">' + '</a>'  +'<a href="detail.html?id=' +  genre.id + '" class="nombre">' + genre.name + '</a></li>'
         })
     })
     .catch(function(error){
