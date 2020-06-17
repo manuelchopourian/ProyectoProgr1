@@ -15,6 +15,7 @@ let urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + busqueda;
 
 let spinner = document.querySelector('.spinner');
 let content = document.querySelector('.search')
+let respuesta = document.querySelector('h4')
 
 window.onload = function() {
     spinner.style.display = 'none';
