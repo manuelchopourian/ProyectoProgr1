@@ -30,7 +30,7 @@ fetch(canciones)
         let resultados = datos.data;
         console.log(resultados)
         resultados.forEach(function(artist){
-            artists.innerHTML += '<li class="info">' + '<img src="' + artist.picture +'" class="portadas">' +'<a href="detail.html?id=' +  artist.id + '">' + artist.name + '</a></li>'
+            artists.innerHTML += '<li class="info">' + '<img src="' + artist.picture +'" class="portadas">' +'<a href="artista.html?id=' +  artist.id + '">' + artist.name + '</a></li>'
         })
     })
     .catch(function(error){
@@ -46,7 +46,7 @@ fetch(canciones)
         let resultados = datos.data;
         console.log(resultados)
         resultados.forEach(function(album){
-            albums.innerHTML += '<li class="info">' + '<img src="' + album.cover +'" class="portadas">' +'<a href="detail.html?id=' +  album.id + '">' + album.title + '</a></li>'
+            albums.innerHTML += '<li class="info">' + '<img src="' + album.cover +'" class="portadas">' +'<a href="album.html?id=' +  album.id + '">' + album.title + '</a></li>'
         })
     })
     .catch(function(error){

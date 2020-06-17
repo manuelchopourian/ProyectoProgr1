@@ -20,7 +20,6 @@ let respuesta = document.querySelector('h4')
 window.onload = function() {
     spinner.style.display = 'none';
     content.style.display = 'grid'
-
  }
 
 fetch(urlTrack)
@@ -47,7 +46,7 @@ fetch(urlTrack)
         let resultados = datos.data;
        
         resultados.forEach(function(resultado){
-            artist.innerHTML +='<li class="info">' + '<img src="' + resultado.picture +'" class="portadas">' +'<a href="detail.html?id=' +  resultado.id + '">' + resultado.name + '</a></li>'; 
+            artist.innerHTML +='<li class="info">' + '<img src="' + resultado.picture +'" class="portadas">' +'<a href="artista.html?id=' +  resultado.id + '">' + resultado.name + '</a></li>'; 
         });
         console.log(resultados)   
         })
@@ -63,7 +62,7 @@ fetch(urlTrack)
         let resultados = datos.data;
        
         resultados.forEach(function(resultado){
-            album.innerHTML +='<li class="info">' + '<img src="' + resultado.cover +'" class="portadas">' +'<a href="detail.html?id=' +  resultado.id + '">' + resultado.title + '</a></li>'; 
+            album.innerHTML +='<li class="info">' + '<img src="' + resultado.cover +'" class="portadas">' +'<a href="album.html?id=' +  resultado.id + '">' + resultado.title + '</a></li>'; 
         });
         console.log(resultados)   
         })
@@ -71,4 +70,3 @@ fetch(urlTrack)
     .catch(function(error){
         console.log(error);
     })
-   
