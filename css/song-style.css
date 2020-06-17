@@ -65,12 +65,19 @@ header .logo{
     text-transform: uppercase;
     color: transparent;
     background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
-    -webkit-animation:text;
+    -webkit-background-clip: text;
     animation: animate 5s linear infinite;
     -webkit-background-size: 500%;
     background-size: 500%;
     
 }
+
+.grid-container{
+    display: grid;
+    height: 100%;
+
+}
+
 @keyframes animate{
     0%{
         background-position: 0 100%;
@@ -83,14 +90,6 @@ header .logo{
     }
 
 }
-
-.grid-container{
-    display: grid;
-    height: 100%;
-
-}
-
-
 
 h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -102,37 +101,10 @@ h2{
     top: 11%;
     right: 4%;
     color: transparent;
-    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    background-image: linear-gradient(to left, black, white, black, white);
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
-    background-size: 500%;
-
-}
-@keyframes animate{
-    0%{
-        background-position: 0 100%;
-    }
-    50%{
-        background-position: 100% 0;
-    }
-    100%{
-        background-position: 0 100%;
-    }
-}
-
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    display: grid;
-    text-align: left;
-    margin: 0em;
-    padding: 0em;
-    top: 29%;
-    left: 11%;
-    color: transparent;
-    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
-    -webkit-background-clip: text;
-    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
     background-size: 500%;
     
 }
@@ -165,7 +137,7 @@ h3{
     bottom: 0%;
     position: absolute;
     width: 100%;
-    height: auto;
+    height: auto;'
     left: 0;
     bottom: 0;
 
@@ -210,24 +182,6 @@ footer ul{
 
     }
     
-    h3{
-        top: 26%;
-        left: 3.5%;
-        font-size: 48px;
-    }
-
-@keyframes animate{
-    0%{
-        background-position: 0 100%;
-    }
-    50%{
-        background-position: 100% 0;
-    }
-    100%{
-        background-position: 0 100%;
-    }
-}
-
     .grid-container{
         grid-template-rows: 1fr;
 
@@ -240,7 +194,7 @@ footer ul{
         
     .nombreartista{
         font-size: 90px;
-        left: 5%;
+        left: 5 %;
         top: 8%;
     }
 
@@ -249,14 +203,6 @@ footer ul{
         right: 4%;
         font-size: 100px;
     }
-
-    h3{
-        top: 28%;
-        left: 4.50%;
-        font-size: 60px;
-    }
-
-}
 
     .descripcioncancion{
         font-size: 29px;
