@@ -1,76 +1,46 @@
-window.addEventListener("load", function (){
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString); //Obtenemos un objeto literal con toda la info de los parametros en la url
+let idAlbums = queryStringObj.get("id"); //con el método get obtenenemos el valor del término a buscar. En este obtenenemos lo que escribió el usuario en el campo de busqueda cuyo "name" es "search" (name="search").
 
-    let queryString = new URLSearchParams(location.search)
-    let codigoAlbum = queryString.get("idAlbums");
+let proxy = 'https://cors-anywhere.herokuapp.com/';
+let url = proxy + "https://api.deezer.com/album/" + idAlbums;
 
-    if(codigoAlbum){
-        
-        fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + codigoAlbum)
-        .then(
-            function (respuesta) {
-                return respuesta.json();
-            }
-        )
-        .then(
-            function(resultado){
-            console.log(resultado);
-            
-            document.querySelector(".nombre").innerHTML = resultado.title;
-            document.querySelector(".tini").src = resultado.cover_medium;
-            
-            let nombreArtista = resultado.artist.name;
-            let idArtista = resultado.artist.id;
-
-            let todoArtist = `<h5 class="cantante"><a class="linkeando" href="artists.html?idArtist=`+ idArtista + `">`+ nombreArtista + `</a> </li>`
-            
-            document.querySelector(".spinnertracks").style.display = "none"
-            document.querySelector(".cantante").innerHTML = todoArtist;
-            
-            
-            let escuchar = `https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=dark&size=medium&type=album&id=` + codigoAlbum + `&app_id=1`
-            
-
-            document.querySelector(".tini").src = escuchar
-            
-
-
-            let tiempo = resultado.duration;
-            let lanzamiento = resultado.release_date
-            let infoAlbum =  `<article class="txchico"> Duración: </article>
-            <article class="txchico">Fecha de estreno: </article>
-            <article class="separar">` + tiempo + ` segundos</article>
-            <article class="fecha">` + lanzamiento + `</article>`
-            
-
-
-            document.querySelector(".infoalbum").innerHTML = infoAlbum;
-
-
-            let otrasCanciones = resultado.tracks.data
-            console.log(otrasCanciones);
-            
-            for (let index = 0; index < otrasCanciones.length; index++) {
-                const masSongs = otrasCanciones[index];
-
-
-
-                console.log(masSongs);
-
-                let nombreCancion = masSongs.title;
-                let idCancion = masSongs.id
-                let albumCanciones = `<li class="cancion"> <a href="tracks.html?idTrack=` + idCancion + `" class="cancionAlbum">`  + nombreCancion + ` </a> </li>`
-
-                
-
-                document.querySelector(".listacanciones").innerHTML += albumCanciones;
-
-
-
-            }
-
-        })
-    }
-else{
-    alert("Este álbum no existe")
-}
+fetch(url)
+    .then(function(response){
+        return response.json();
     })
+.then(function(datos){
+        console.log(datos);
+        let album = document.querySelector(".titulo");
+        album.innerHTML = datos.title;
+        let foto = document.querySelector(".weeknd");
+        foto.src = datos.cover_big;
+        let descrip = document.querySelector(".descripcion");
+        descrip.innerHTML = '<a class="hipervinculo" href= "detail.html?id=' + datos.artist.id + '">' + datos.artist.name + '</a>';
+        descrip.innerHTML += "<br>" + "Fans: " + datos.fans + "<br>" + "Fecha de Salida: " + datos.release_date; 
+    })
+.catch(function(error){
+        console.log(error); 
+    })
+
+
+let ruta = proxy + "https://api.deezer.com/album/" + idAlbums + "/tracks"; 
+
+fetch(ruta)
+.then(function(datas){
+    return datas.json()
+})
+
+.then(function(data){
+    let cancion = data.data;
+    let tops = document.querySelector('.popular-song'); 
+    let toptracks = '';
+    for(let i=0; i<5; i++){
+      toptracks += '<li><a class="hipervinculo" href= tracks.html?id=' + cancion[i].id + '>' + cancion[i].title + '</a></li>';
+    }
+    tops.innerHTML+= toptracks;
+})
+
+.catch(function(error){
+    console.log(error);
+})
