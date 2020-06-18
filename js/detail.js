@@ -73,7 +73,8 @@ fetch(url)
                let agregar = document.querySelector('.boton3')
  
                   agregar.innerHTML = 'Agregar a playlist'
-             }else{
+             }
+             else{
                  let agregar = document.querySelector('.boton3')
      
                   agregar.innerHTML = 'Quitar de playlist'

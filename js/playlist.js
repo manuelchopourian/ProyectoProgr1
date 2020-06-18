@@ -12,8 +12,7 @@ let body = document.querySelector('.playlist-container')
 if(recuperoStorage == null || recuperoStorage == '[]'){
 
     playlist =[]
-    playlistwrapper.innerHTML += '<h1> Actualmente no hay canciones en tu playlist </h1>'
-    body.style.height = '600px'
+    playlistwrapper.innerHTML += '<h3 class="no-playlist"> Actualmente no hay canciones en tu playlist </h3>'
     }
     
     else{
@@ -60,8 +59,6 @@ boton.onclick = function(){
     let confirmar = confirm('¿Estas Seguro? Todas las canciones seran eliminadas de tu playlist')
     if(confirmar == true){
         localStorage.removeItem('playlist')
-
-
     }
 
 

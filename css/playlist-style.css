@@ -50,6 +50,14 @@ header .logo{
     position: relative;
     top: 10px;
 }
+
+.no-playlist{
+    color: whitesmoke;
+    width: 75%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 .boton{
     background-color: rgba(37, 223, 207, 0.726);
     border-radius: 20px;
@@ -110,6 +118,9 @@ footer ul{
     .player-playlist{
         margin-left: 2%;
     }
+    .no-playlist{
+        font-size: 20px;
+    }
     footer{
         font-size: 15px;
     }
@@ -121,5 +132,8 @@ footer ul{
     }
     .barra ul{
         padding-top: 30px;
+    }
+    .no-playlist{
+        font-size: 22px;
     }
 }
