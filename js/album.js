@@ -16,7 +16,7 @@ fetch(url)
         let foto = document.querySelector(".weeknd");
         foto.src = datos.cover_big;
         let descrip = document.querySelector(".descripcion");
-        descrip.innerHTML = '<a class="hipervinculo" href= "artista.html?id=' + datos.artist.id + '">' + datos.artist.name + '</a>';
+        descrip.innerHTML += "Artista:" + '<a class="hipervinculo" href= "artista.html?id=' + datos.artist.id + '">' + datos.artist.name + '</a>';
         descrip.innerHTML += "<br>" + "Fans: " + datos.fans + "<br>" + "Fecha de Salida: " + datos.release_date; 
     })
 .catch(function(error){
