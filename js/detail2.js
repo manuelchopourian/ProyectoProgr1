@@ -22,8 +22,8 @@ fetch(url)
         detalleAlbum.innerHTML += "Album:" + '<a class="hipervinculo" href= "album.html?id=' + datos.album.id + '">' + datos.album.title + '</a>'; 
 
         let duracion = document.querySelector('.duracion')
-        duracion.innerHTML += 'Duracion:' + datos.duration
+        duracion.innerHTML += 'Duracion: ' + datos.duration + 's'
     })
 .catch(function(error){
-        console.log(error); 
+        console.log(error);
     })

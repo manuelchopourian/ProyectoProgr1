@@ -14,8 +14,7 @@ li{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: darkred;
+    grid-template-rows: 56px 700px 56px;
 }
 header{
     background-color: black;
@@ -41,62 +40,67 @@ header .logo{
     top: 15%;
     left: 15%;
 }
-
-.afterhoursalbum{
-    margin-top: 0;
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 0;
+section{
+    display: grid;
+    grid-template-rows: 10% 90%;
 }
-
-.afterhourspalabra{
-    color: darkred;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin-right: 10px;
-    position: absolute;
-    width: 100%;
+h1{
     text-align: center;
-    bottom: 0%;
-    font-weight: 700;
-}
-
-.ALBUM{
-    grid-template-rows: 1fr 1fr;
-
-
-}
-
-.theweekndnombre{
-    position: absolute;
-    color: black;
-    top: 19.5%;
-    left: 9%;
-    font-size: 52px;
-    font-weight: 700;
-
-
-}
-
-.descripcionalbum{
-    font-size: 21px;
     color: white;
-    text-align: center;
-    margin-bottom: 30px;
     font-family: 'Barlow Condensed', sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-
-
+    height: 30px;
 }
-
+.content{
+    text-align: center;
+}
+.portada{
+    width: 80%;
+    margin: auto;
+    border: solid 3px  rgba(37, 223, 207, 0.726);
+    border-radius: 15px;
+}
+.descripcion{
+    text-align: center;
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+h4 a{
+    color: rgb(37, 223, 208);
+}
+h4 a:hover{
+    text-decoration: none;
+    color: rgb(37, 223, 208);
+}
+.populares{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(108, 238, 227);
+}
+.popular-song{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3px;
+}
+.popular-song a{
+    color: whitesmoke;
+    font-size: 16px;
+}
+.popular-song a:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.items{
+    color: whitesmoke;
+    font-size: 14px;
+}
 footer{
     background-color: black;
     color: gray;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
     text-align: center;
@@ -104,118 +108,79 @@ footer{
 footer ul{
     margin: auto;
 }
+.iconos{
+    height: 60%;
+    position: relative;
+    top: 15%;
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3px;
+    text-align: left;
+    padding-left: 20%;
+}
 .deezer{
     height: 100%;
     margin: auto;
 }
-
-.tracklist{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    line-height: 45px;
-    background-color: darkred;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 0;
-    border-style: solid;
-    border-color: black;
-    border-width: 8px;
-
-}
-
-
-@media(min-width: 600px){
-
-    .theweekndnombre{
-        text-align: center;
-        left: 14%;
-        top: 24%;
-        font-size: 64px;
-    }
-
-    .afterhourspalabra{
-        font-size: 63px;
-        bottom: -64%;
-    }
-
-    .descripcionalbum{
-        font-size: 26px;
-    }
-
-}
-
 @media(min-width: 768px){
-
-    .theweekndnombre{
-        font-size: 84.5px;
-        left: 13.5%;
-        top: 26%;
+    .grid-container{
+        grid-template-rows: 80px 900px 90px
     }
-
-    .afterhourspalabra{
-        font-size: 96px;
-        bottom: -106%;
-
+    .barra ul{
+        padding-top: 5%;
     }
-
-    .tracklist{
-        font-size: 36px;
-        line-height: 60px;
+    header .logo{ 
+        height: 60%;
+        left: 30%;
     }
-
-    .Tracks{
-        font-size: 56px;
-        color: black;
-        font-weight: 700;
-        text-align: left;
-        margin-left: 6%;
+    .portada{
+        width: 60%;
+        margin: auto;
+    }
+    .popular-song a{
+        font-size: 18px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h3{
+        font-size: 26px;
+        position: relative;
+        bottom: 10px;
+    }
+    .items{
+        font-size: 16px;
     }
 }
-
 @media(min-width: 1024px){
-    
-    .theweekndnombre{
-        font-size: 112px;
-        top: 30%;
-        left: 13.5%;
+    body{
+        background-color: rgba(54, 54, 54, 0.911) ;
     }
-
-    .afterhourspalabra{
-        font-size: 125px;
-        bottom: -162%;
-
+    .grid-container{
+        grid-template-rows: 100px 1150px 100px
     }
-
-    .descripcionalbum{
+    .barra ul{
+        padding-top: 7.65vh;
+    }
+    .portada{
+        width: 40%;
+        margin: auto;
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
         font-size: 30px;
     }
-
-    .tracklist{
-        font-size: 52px;
-        line-height: 2;
-
+    .popular-song a{
+        font-size: 20px;
     }
-
-}
-
-@media(min-width: 1440px){
-
-    .theweekndnombre{
-        font-size: 157px;
-        top: 18%;
-        left: 16%;
+    .items{
+        font-size: 18px;
     }
-
-    .afterhourspalabra{
-        font-size: 160px;
-        bottom: -60%;
-    }
-
-    .descripcionalbum{
-        font-size: 36px;
-    }
-
-
 }

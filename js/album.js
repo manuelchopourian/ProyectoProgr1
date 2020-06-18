@@ -10,14 +10,13 @@ fetch(url)
         return response.json();
     })
 .then(function(datos){
-        console.log(datos);
-        let album = document.querySelector(".titulo");
+        let album = document.querySelector("h1");
         album.innerHTML = datos.title;
-        let foto = document.querySelector(".weeknd");
+        let foto = document.querySelector(".portada");
         foto.src = datos.cover_big;
         let descrip = document.querySelector(".descripcion");
-        descrip.innerHTML += "Artista:" + '<a class="hipervinculo" href= "artista.html?id=' + datos.artist.id + '">' + datos.artist.name + '</a>';
-        descrip.innerHTML += "<br>" + "Fans: " + datos.fans + "<br>" + "Fecha de Salida: " + datos.release_date; 
+        descrip.innerHTML += "<h4 class='items'>Artista: " + '<a class="hipervinculo" href= "artista.html?id=' + datos.artist.id + '">' + datos.artist.name + '</a></h4>';
+        descrip.innerHTML += "<h4 class='items'>Fans: " + datos.fans + '</h4>' + "<h4 class='items'>Fecha de Salida: " + datos.release_date + '</h4>'; 
     })
 .catch(function(error){
         console.log(error); 
