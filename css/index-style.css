@@ -151,7 +151,8 @@ footer ul{
     top: 7px;
 }
 .botones button{
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
 }
 @media(min-width: 768px){
     .grid-container{
