@@ -7,6 +7,7 @@ let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url = proxy + 'https://api.deezer.com/artist/';
 
 let id = url + codigo
+let urlTops = id + '/top'
 
 fetch(id)
     .then(function(response){
@@ -14,7 +15,7 @@ fetch(id)
     })
     .then(function(resultado){
         let nombre = resultado.data
-        let h2 = document.querySelector("h2")
+        let h2 = document.querySelector(".nombre")
         let h3 = document.querySelector("h3")
         let div = document.querySelector(".foto-artista")
 
@@ -25,3 +26,16 @@ fetch(id)
     .catch(function(error){
         console.log(error)
     });
+
+    fetch(urlTops)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+        let top = document.querySelector('.top-canciones');
+        let nombre = datos.data;
+
+        nombre.forEach(function(track){
+            top.innerHTML += '<li class="info">' +'<a href="detail.html?id=' +  track.id + '"><img src="' + track.album.cover +'" class="portadas">' + '</a> <a href="detail.html?id=' +  track.id + '">' + track.title + '</a></li>'
+        })
+    })
