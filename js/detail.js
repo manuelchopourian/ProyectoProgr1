@@ -36,44 +36,7 @@ fetch(url)
                 player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=3000&height=350&color=00e8dc&layout=dark&size=medium&type=tracks&id=' + trackId + '&app_id=1'
       }
 
-                  /* Agregar a la playlist */
-                  let recuperoStorage = localStorage.getItem('playlist')
-
-                  if (recuperoStorage ==null) {
-                  playlist = [];
-                    }
-                   else{
-                    playlist = JSON.parse(recuperoStorage)
-                   }
- 
-                  let agregar = document.querySelector('.boton3')
- 
-                  if (playlist.includes(trackId)){
-                       agregar.innerHTML = 'Quitar de la playlist'
-                  }
- 
-                 agregar.addEventListener('click', function(pre){
-                 pre.preventDefault();
- 
-              if(playlist.includes(trackId)){
- 
-                 let indiceEnELArray = playlist.indexOf(trackId);
-                  playlist.splice(indiceEnELArray , 1);
-
-               let agregar = document.querySelector('.boton3')
-                  agregar.innerHTML = 'Agregar a playlist'
-             }
-             else{
-                 let agregar = document.querySelector('.boton3')
-                  agregar.innerHTML = 'Quitar de playlist'
-                  playlist.push(trackId);
-                 }
-              let playlistparastorage = JSON.stringify(playlist)
-             localStorage.setItem('playlist' , playlistparastorage)
-             console.log(localStorage);
-    
-    })
-
+                 
 
 }) 
 
