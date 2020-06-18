@@ -1,38 +1,23 @@
 body{
     background-color: white;
     margin: 0;
-    align-items: center;
 }
 *{
     box-sizing: border-box;
-   }
+}
 ul,ol{
     padding: 0;
 }
 li{
     list-style-type: none;
 }
-.playlist{
-    color:yellow;
-    text-decoration: none;
-}
 a{
     text-decoration: none;
     color: white;
 }
-.search{
-    width: 80%;
-    border-radius: 25px;
-    padding: 10px;
-    background-color: rgba(128, 128, 128, 0.514);
-    border: none;   
-    height: 30px;
-    font-size: 16px;
-    color: white;
-   }
 .grid-container{
     display: grid;
-    grid-template-rows: 54px 600px 100px;
+    grid-template-rows: 56px 1000px 56px;
 }
 header{
     background-color: black;
@@ -45,117 +30,39 @@ header{
     gap: 5px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 5px;
+    padding-top: 2%;
+    font-size: 14px;
 }
 header .logo{ 
-    height: 70%;
+    height: 60%;
     text-align: center;
     position: relative;
-    top: 7px;
-    left: 7px;
+    top: 15%;
+    left: 15%;
 }
-
-.buscador{ 
-    margin-top: 35px;
-}
-
 .playlist-container{
-    
-    width: 65%;
-    padding-top: 150px;
-    margin: auto;
-}
-.bad-bunny{
-    color: turquoise;
-}
-
-.lista-de-reproducion{
-
-display: grid;
-width: 100%;
-grid-template-rows: 150px 150px 150px 150px 150px;
-gap: 10px;
-
-}
-
-.cancion{
-display: grid;
-background-color: rgba(5, 5, 5, 0.678);
-color: #00e8dcab;
-    grid-template-columns: 1fr 3fr;
-    gap: 5px;
-    border: solid 5px #00e8dc8c ;
-}
-
-.foto-cancion{
-
-    padding: 20px;
     width: 100%;
-    height: 150px;
-    box-sizing: border-box;
-
+    background-color: rgba(73, 73, 73, 0.89);
 }
-   
-
-
-.texto-cancion{
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr ;
-
-    margin: 10px;
+.agregar1{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 10px;
 }
-
-
-.titulo-cancion{
-font-size: 8px;
-text-align: center;
-
-}
-
-.foto-playlist{
-
-    object-fit: cover;
-   width: 100%;
-   height: 110px;
-}
-.ArtistasyAlbum{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-}
-
-.artista{
-    font-size: 12px;
-    text-align: center;
-}
-
-.album{
-    font-size: 12px;
-    text-align: center;
-}
-
-
-.Audio-Add{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-
-.add-playlist{
-    font-size: 12px;
-    text-align: center;
-}
-
 .boton{
-
-    background-color: #00c1e8  ;
+    background-color: rgba(37, 223, 207, 0.726);
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    padding: 15px;
 }
-
-.cancion-audio{
-
-    height: 70%;}
-
-    footer{
+.listadereproduccion{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+footer{
         background-color: black;
         color: gray;
         display: grid;
@@ -164,12 +71,12 @@ text-align: center;
         font-size: 12px;
         text-align: center;
         
-    }
-    footer ul{
+}
+footer ul{
         margin: auto;
-    }
-    .iconos{
-        height: 60%;
+}
+.iconos{
+        height: 50%;
         position: relative;
         top: 15%;
         color: whitesmoke;
@@ -178,149 +85,41 @@ text-align: center;
         gap: 3px;
         text-align: left;
         padding-left: 20%;
+ 
+}
+.deezer{
+        height: 100%;
+        margin: auto;
+}
+@media(min-width: 768px){
+    .grid-container{
+        grid-template-rows: 80px 1000px 90px
     }
-    .deezer{
-        height: 100%;
-        margin: auto;}
-        .crear{
-            background-color: #00e8dc;
-            border-radius: 25px ;
-            border: none;
-        }
-        
-        .body-playlist{
-            margin: unset;
-        }
-        
-        .playlist-container{
-        
-            height: fit-content;
-            display: grid;
-        padding-top: 130px;
-        height: 100%;
-        
-        
-        }
-        
-        .container-playlist{
-        
-            width: fit-content;
-            padding: 20px;
-            text-align: center;
-            margin: auto;
-           
-        
-        
-        border: solid;
-        }
-        
-        .listadereproducion{
-        
-        
-        padding-top: 130px;
-        height: 200px;
-        }
-        
-        .agregar{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
-        }
-        
-        .agregar1{
-            text-align: center;
-        
-        }
-        
-        .cancion{
-            width: 60%;
-            display: grid;
-            background-color: rgba(5, 5, 5, 0.678);
-            color: #00e8dcab;
-            grid-template-columns: 1fr 3fr;
-            gap: 5px;
-            position: relative;
-            left: 20%;
-            height: 150px;
-        }
-        
-        .foto-playlist{
-            object-fit: cover;
-           width: 100%;
-           height: 110px;
-        }
-        
-        .foto-cancion{
-            padding: 20px;
-            width: 100%;
-            height: 150px;
-            box-sizing: border-box;
-        }
-        
-        .texto-cancion{
-           display: grid;
-           grid-template-rows: 1fr 1fr 1fr ;
-        
-            margin: 10px;
-        }
-        
-        
-        
-        .titulo-cancion{
-            text-align: center;
-        }
-        
-        .titulo-cancion2{
-            color:  #00e8dc;
-        text-decoration: unset;
-        font-size: 20px;
-        }
-        
-        
-        .ArtistasyAlbum{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5px;
-        
-        }
-        
-        .artista{
-            font-size: 13px;
-            text-align: center;
-            text-decoration: none;
-            color:  #00e8dc ;
-        }
-        
-        .album{
-            font-size: 13px;
-            text-align: center;
-        }
-        
-        
-        .Audio-Add{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 6px;
-        }
-        
-        
-        .add-playlist{
-            font-size: 12px;
-            text-align: center;
-        }
-        
-        .boton{
-        
-            background-color: #00e8dc;
-            border-radius: 25px ;
-            border: none;
-            width: 300px;
-            margin: 20px;
-            height: 30px;
-        }
-        
-        .cancion-audio{
-        
-            height: 70%;
-            
-        }
+    .barra ul{
+        padding-top: 3%;
+    }
+    header .logo{ 
+        height: 60%;
+        left: 30%;
+    }
+    .boton{
+        width: 50%;
+        margin: auto;
+        margin-left: 25%;
+    }
+    .player-playlist{
+        margin-left: 2%;
+    }
+    footer{
+        font-size: 15px;
+    }
+}      
+@media(min-width: 1024px){
+
+    .grid-container{
+        grid-template-rows: 100px 1000px 100px
+    }
+    .barra ul{
+        padding-top: 30px;
+    }
+}
