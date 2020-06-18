@@ -1,7 +1,6 @@
 let queryString = new URLSearchParams(location.search);
 
 let codigo = queryString.get('id')
-let codigoFoto = queryString.get('id')
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url = proxy + 'https://api.deezer.com/artist/';
