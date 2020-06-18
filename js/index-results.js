@@ -28,16 +28,32 @@ fetch(urlTrack)
     })
     .then(function(datos){
         let resultados = datos.data;
+        let total = datos.total
+        let h4 = document.querySelector('h4')
+        let tracksTitle = document.querySelector('.tracks')
+        let albumTitle = document.querySelector('.album')
+        let artistTitle = document.querySelector('.artist')
        
-        resultados.forEach(function(resultado){
+       
+            if(total == 0){
+                h4.innerText = 'No se encontraron resultados para tu busqueda'
+                tracksTitle.style.display = 'none'  
+                albumTitle.style.display = 'none'
+                artistTitle.style.display = 'none'
+            }
+            else{
+            resultados.forEach(function(resultado){
             tracks.innerHTML += '<li class="info">' + '<img src="' + resultado.album.cover +'" class="portadas">' +'<a href="detail.html?id=' +  resultado.id + '">' + resultado.title_short + '</a></li>';
-        });
+         })
+         };
         console.log(resultados)   
         })
+        
 
     .catch(function(error){
         console.log(error);
     })
+   
     fetch(urlArtist)
     .then(function(response){
         return response.json();
