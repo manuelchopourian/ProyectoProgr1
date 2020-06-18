@@ -3,7 +3,6 @@ body{
     background-color: hsla(0, 0%, 29%, 0.89);    
 }
 
-
 *{
     box-sizing: border-box;
 }
@@ -19,9 +18,7 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 54px;
-    min-height: 100%;
-    position: relative;
+    grid-template-rows: 56px 1500px 56px; 
 }
 header{
     background-color: black;
@@ -44,13 +41,9 @@ header .logo{
     left: 7px;
 }
 
-.foto-artista{
-    width: 10%;
-    height: auto;
-    position: relative;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+.foto-artista img{
+    width: 50%;
+    margin: auto;
 
 }
 
@@ -84,12 +77,6 @@ header .logo{
     
 } */
 
-.grid-container{
-    display: grid;
-    height: 100%;
-
-}
-
 @keyframes animate{
     0%{
         background-position: 0 100%;
@@ -100,9 +87,7 @@ header .logo{
     100%{
         background-position: 0 100%;
     }
-
 }
-
 
 h3{
     font-family: Arial, Helvetica, sans-serif;
