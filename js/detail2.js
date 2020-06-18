@@ -12,7 +12,7 @@ fetch(url)
         let foto = document.querySelector(".foto");
         foto.innerHTML = '<img src ="' + datos.album.cover + '">';
 
-        let nombre = document.querySelector(".h1");
+        let nombre = document.querySelector("h1");
         nombre.innerHTML = datos.title;
 
         let detalleArtist = document.querySelector(".detalle-artist");
