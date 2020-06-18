@@ -227,7 +227,7 @@ footer ul{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
     .grid-container{
-        grid-template-rows: 100px 500px 40px 70px 1250px 100px
+        grid-template-rows: 100px 500px 40px 70px 1550px 100px
     }
     .barra ul{
         padding-top: 40px;
@@ -255,9 +255,9 @@ footer ul{
         grid-template-columns: repeat(2, 1fr);
     }
     .info{
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 35% 65%;
         grid-template-rows: 100%;
-        height: 80px;
+        height: 100px;
     }
     .info a{
         font-size: 18px;
