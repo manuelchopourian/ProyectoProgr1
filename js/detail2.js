@@ -11,29 +11,31 @@ fetch(url)
         return response.json();
     })
     .then(function(datos){
-        console.log(datos);
 
         //Resolvemos qué hacemos con los datos
         let titulo = document.querySelector('.titulo');
-        titulo.innerHTML += datos.title;
+        titulo.innerHTML += datos.title + '</a>'
+
+        let foto = document.querySelector('.portada');
+        foto.src = datos.album.cover
         
         let interprete = document.querySelector('.interprete');
-        interprete.innerHTML += datos.artist.name
+        interprete.innerHTML += '<a href="artista.html?id='+ datos.artist.id + '">' + datos.artist.name + '</a>'
         
         let album = document.querySelector('.album');
-        album.innerHTML += datos.album.title
+        album.innerHTML += '<a href="album.html?id='+ datos.album.id + '">' + datos.album.title + '</a>'
+
+        let duracion = document.querySelector('.duracion')
+        duracion.innerHTML += datos.duration + ' segundos'
 
         //Aquí agregamos el player.
         let player = document.querySelector('iframe');
-        player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
-
-        
+        player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=90&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'     
     })
     .catch(function (error) {
         console.log(error);
 
     })    
-
 
 //Pasos para agregar temas a una playlist
 //Paso 1: recuperar datos del storage
