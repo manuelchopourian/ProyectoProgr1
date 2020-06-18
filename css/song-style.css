@@ -19,7 +19,7 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 54px 600px 326px;
+    grid-template-rows: 54px;
     min-height: 100%;
     position: relative;
 }
@@ -44,15 +44,27 @@ header .logo{
     left: 7px;
 }
 
-.FotoTonesAndI{
-    width: 100%;
+.foto-artista{
+    width: 10%;
     height: auto;
     position: relative;
-    margin-top: 26%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
-.nombreartista{
+.top-canciones a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    left: 10%;
+    position: relative;
+    margin: 20px;
+
+}
+/* .nombreartista{
     font-family: Arial, Helvetica, serif;
     position: absolute;
     display: grid;
@@ -70,7 +82,7 @@ header .logo{
     -webkit-background-size: 500%;
     background-size: 500%;
     
-}
+} */
 
 .grid-container{
     display: grid;
@@ -91,15 +103,46 @@ header .logo{
 
 }
 
-h2{
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    display: grid;
+    text-align: center;
+    margin: 0em;
+    padding: 0em;
+    top: 59.9%;
+    font-size: 28px;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+.nombre{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     display: grid;
     text-align: right;
     margin: 0em;
     padding: 0em;
-    top: 11%;
-    right: 4%;
+    top: 60%;
+    right: 31%;
+    font-size: 60px;
     color: transparent;
     background-image: linear-gradient(to left, black, white, black, white);
     -webkit-background-clip: text;
@@ -121,6 +164,11 @@ h2{
     }
 }
 
+.track-id{
+    color: red;
+}
+
+
 .descripcioncancion{
     font-size: 18px;
     color: white;
@@ -137,7 +185,7 @@ h2{
     bottom: 0%;
     position: absolute;
     width: 100%;
-    height: auto;'
+    height: auto;
     left: 0;
     bottom: 0;
 
@@ -194,7 +242,7 @@ footer ul{
         
     .nombreartista{
         font-size: 90px;
-        left: 5 %;
+        left: 5%;
         top: 8%;
     }
 
@@ -217,3 +265,4 @@ footer ul{
         font-size: 24px;
         text-align: center;
     }
+}
