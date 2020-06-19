@@ -165,7 +165,8 @@ h3{
     -webkit-background-size: 500%;
     background-size: 500%;
     word-wrap: break-word;
-    width: 30%;
+    width: 100%;
+    text-align: right;
     
 }
 
@@ -297,6 +298,7 @@ footer ul{
     }
     .nombre{
         font-size: 92px;
+        width: 100%;
     }
     .seguidores{
         top: 0px;
@@ -340,6 +342,7 @@ footer ul{
         font-size: 79px;
         right: 3%;
         top: 130px;
+        width: 90%;
     }
 
     .foto-artista img{
@@ -401,6 +404,7 @@ footer ul{
         font-size: 115px;
         right: 6%;
         top: 16%;
+        width: 90% ;
     }
 
     .foto-artista img{
