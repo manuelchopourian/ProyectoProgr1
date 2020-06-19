@@ -156,7 +156,8 @@ h3{
     text-align: right;
     margin: 0em;
     padding: 0em;
-    top: 12.5%;
+    top: 0px;
+    margin-top: 18%;
     right: 3%;
     font-size: 52px;
     color: transparent;
@@ -248,11 +249,12 @@ footer ul{
         grid-template-rows: 56px 1270px 56px; 
     }
     .nombre{
-        top: 13.5%;
+        top: 0px;
     }
     .seguidores{
         top: 0px;
     }
+    
 }
 @media(min-width: 695px){
 
@@ -299,6 +301,8 @@ footer ul{
         font-size: 92px;
         width: 90%;
         text-align: right;
+        font-size: 85px;
+        margin-top: 15%;
     }
     .seguidores{
         top: 0px;
@@ -341,7 +345,8 @@ footer ul{
     h1.nombre{
         font-size: 79px;
         right: 3%;
-        top: 130px;
+        top: 0px;
+        margin-top: 10%;
     }
 
     .foto-artista img{
@@ -402,8 +407,9 @@ footer ul{
 
     h1.nombre{
         font-size: 115px;
-        right: 6%;
-        top: 16%;
+        right: 8%;
+        top: 0px;
+        margin-top: 10%;
     }
 
     .foto-artista img{
