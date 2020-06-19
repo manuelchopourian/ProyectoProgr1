@@ -124,7 +124,7 @@ h3{
     text-align: center;
     margin: 0em;
     padding: 0em;
-    top: 0px;
+    top: 100%;
     margin-top: 100%;
     right: 2%;
     font-size: 28px;
@@ -152,11 +152,11 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     z-index: 1;
-    text-align: right;
+    text-align: center;
     margin: 0em;
     padding: 0em;
     top: 12.5%;
-    left: 3%;
+    right: 3%;
     font-size: 52px;
     color: transparent;
     background-image: linear-gradient(to left, black, white, black, white);
@@ -164,6 +164,8 @@ h3{
     animation: animate 5s linear infinite;
     -webkit-background-size: 500%;
     background-size: 500%;
+    word-wrap: break-word;
+    width: 30%;
     
 }
 
