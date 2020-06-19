@@ -124,8 +124,8 @@ h3{
     text-align: center;
     margin: 0em;
     padding: 0em;
-    top: 100%;
-    margin-top: 100%;
+    top: 0px;
+    margin-top: 105%;
     right: 2%;
     font-size: 28px;
     color: transparent;
@@ -152,7 +152,7 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     z-index: 1;
-    text-align: center;
+    text-align: right;
     margin: 0em;
     padding: 0em;
     top: 12.5%;
@@ -166,7 +166,7 @@ h3{
     background-size: 500%;
     word-wrap: break-word;
     width: 100%;
-    text-align: right;
+
     
 }
 
@@ -185,6 +185,7 @@ h3{
 .top-canciones img{
     margin-right: 0%;
     border-radius: 15px;
+    width: 90%;
     border: solid 3px rgba(37, 223, 207, 0.726);
 }
 
@@ -241,7 +242,7 @@ footer ul{
     height: 100%;
     margin: auto;
 }
-@media (min-width: 425px){
+@media(min-width: 425px){
     .grid-container{
         grid-template-rows: 56px 1270px 56px; 
     }
@@ -252,13 +253,11 @@ footer ul{
         top: 0px;
     }
 }
-@media (min-width: 695px){
+@media(min-width: 695px){
 
     body{
         height: 100%;
     }
-
-
     .nombreartista{
             left: 5.5%;
             top: 8%;
@@ -277,9 +276,8 @@ footer ul{
 
     }
 
-
 }
-@media (min-width: 768px){
+@media(min-width: 768px){
     .grid-container{
         grid-template-rows: 80px 2100px 90px
     }
@@ -298,7 +296,8 @@ footer ul{
     }
     .nombre{
         font-size: 92px;
-        width: 100%;
+        width: 90%;
+        text-align: right;
     }
     .seguidores{
         top: 0px;
@@ -325,7 +324,7 @@ footer ul{
     }
 }
 
-@media (min-width: 1024px){
+@media(min-width: 1024px){
     body{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
@@ -342,7 +341,6 @@ footer ul{
         font-size: 79px;
         right: 3%;
         top: 130px;
-        width: 90%;
     }
 
     .foto-artista img{
@@ -391,10 +389,11 @@ footer ul{
 
     footer{
         height: 100px;
+
     }
 }
 
-@media (min-width: 1440px){
+@media(min-width: 1440px){
 
     .barra ul{
         padding-top: 2.5%;
@@ -404,7 +403,6 @@ footer ul{
         font-size: 115px;
         right: 6%;
         top: 16%;
-        width: 90% ;
     }
 
     .foto-artista img{
