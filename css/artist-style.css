@@ -3,6 +3,7 @@ body{
     background-color: hsla(0, 0%, 29%, 0.89);    
 }
 
+
 *{
     box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ a{
 }
 .grid-container{
     display: grid;
-    grid-template-rows: 56px 1500px 56px; 
+    grid-template-rows: 56px 1235px 56px; 
 }
 header{
     background-color: black;
@@ -42,19 +43,44 @@ header .logo{
 }
 
 .foto-artista img{
-    width: 50%;
-    margin: auto;
-
+    width: 100%;
 }
 
+.foto-artista{
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.top5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 223, 208);
+    font-size: 40px;
+    position: absolute;
+    top: 98%;
+    left: 33%;
+
+}
 .top-canciones a{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    font-size: 29px;
+    align-self: initial;
+    margin: 2px;
     text-align: center;
-    font-size: 30px;
-    left: 10%;
-    position: relative;
-    margin: 20px;
+    margin-top: 14px;
+    
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 5px;
+}
+
+.info a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 /* .nombreartista{
@@ -96,7 +122,8 @@ h3{
     text-align: center;
     margin: 0em;
     padding: 0em;
-    top: 59.9%;
+    top: 92.8%;
+    right: 2%;
     font-size: 28px;
     color: transparent;
     background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
@@ -121,13 +148,13 @@ h3{
 .nombre{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    display: grid;
+    z-index: 1;
     text-align: right;
     margin: 0em;
     padding: 0em;
-    top: 60%;
-    right: 31%;
-    font-size: 60px;
+    top: 12.5%;
+    left: 3%;
+    font-size: 52px;
     color: transparent;
     background-image: linear-gradient(to left, black, white, black, white);
     -webkit-background-clip: text;
@@ -149,6 +176,12 @@ h3{
     }
 }
 
+.top-canciones img{
+    margin-right: 0%;
+    border-radius: 15px;
+    border: solid 3px rgba(37, 223, 207, 0.726);
+}
+
 .track-id{
     color: red;
 }
@@ -164,6 +197,7 @@ h3{
     margin-right: 5%;
 
 }
+
 
 
 .elfooter{
@@ -195,6 +229,25 @@ footer ul{
     margin: auto;
 }
 
+@media (min-width: 425px){
+        
+    .top5{
+        top: 110%;  
+        }
+
+    h3{
+        top: 103.8%;
+    }
+
+    .grid-container{
+        grid-template-rows: 56px 1270px 56px; 
+    }
+    .nombre{
+        top: 13.5%;
+
+    }
+}
+
 @media (min-width: 695px){
 
     body{
@@ -223,22 +276,86 @@ footer ul{
 
 }
 
+
+
+
+
+@media (min-width: 768px){
+
+    .nombre{
+        font-size: 92px;
+    }
+
+    .seguidores{
+        top: 180%;
+        font-size: 45px;
+    }
+
+    .top5{
+        top: 190%;
+        left: 42%;
+
+    }
+
+    .grid-container{
+        grid-template-rows: 56px 1850px 56px; 
+    }
+
+    .top-canciones a{
+        font-size: 38px;
+    }
+    .top-canciones img{
+        width: 170px;
+
+    }
+}
+
 @media (min-width: 1024px){
         
-    .nombreartista{
-        font-size: 90px;
-        left: 5%;
-        top: 8%;
+    h1.nombre{
+        font-size: 79px;
+        right: 3%;
+        top: 30%;
     }
 
-    h2{
-        top: 14%;
-        right: 4%;
-        font-size: 100px;
+    .foto-artista img{
+        width: 60%;
+        margin-left: 5%;
+        margin-top: 5%;
+
     }
 
-    .descripcioncancion{
-        font-size: 29px;
+    h3.seguidores{
+        font-size: 60px;
+        top: 158%;
+        width: 32%;
+    }
+
+    h4.top5{
+        top: 194%;
+        left: 41%;
+        font-size: 64px;
+
+    }
+
+    .info{
+        padding-top: 5%;
+
+    }
+
+    .top-canciones img{
+        width: 52%;
+        gap: 10px;
+
+    }
+
+    .top-canciones a{
+        font-size: 51px;
+
+    }
+
+    .grid-container{
+        grid-template-rows: 56px 2060px 56px; 
     }
 
     .footer{
@@ -250,4 +367,51 @@ footer ul{
         font-size: 24px;
         text-align: center;
     }
+}
+
+@media (min-width: 1440px){
+
+    h1.nombre{
+        font-size: 115px;
+        right: 6%;
+        top: 16%;
+    }
+
+    .foto-artista img{
+        width: 50%;
+
+    }
+
+    h3.seguidores{
+        font-size: 81px;
+        top: 70%;
+        right: 6%;
+
+        }
+
+        h4.top5{
+            top: 118%;
+            left: 43%;
+            font-size: 71px;
+        }
+
+        .top-canciones a{
+            font-size: 55px;
+    
+        }
+
+        .top-canciones img{
+            width: 45%;
+            gap: 1px;
+        }
+
+        .info{
+            padding-top: 5%;
+    
+        }
+         
+        .grid-container{
+            grid-template-rows: 56px 2650px 56px; 
+        }
+
 }

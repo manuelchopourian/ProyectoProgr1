@@ -21,6 +21,8 @@ fetch(id)
         h2.innerHTML += resultado.name
         h3.innerHTML += resultado.nb_fan + " Seguidores"  
        div.innerHTML = '<img src="' + resultado.picture_big + '">' 
+
+    //    const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     })
     .catch(function(error){
         console.log(error)
