@@ -31,7 +31,7 @@ if(recuperoStorage == null || recuperoStorage == '[]'){
              return response.json();
         })
         .then(function(track){
-            playlistwrapper.innerHTML += '<div class ="player-playlist"><iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=80%&height=61&color=007FEB&layout=&size=medium&type=tracks&id=' + track.id + '&app_id=1" width="80%" height="61"></iframe></div>';
+            playlistwrapper.innerHTML += '<div class ="player-playlist"><iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=80%&height=63&color=25DFCF&layout=&size=medium&type=tracks&id=' + track.id + '&app_id=1" width="80%" height="63"></iframe></div>';
         })
            
     
@@ -46,5 +46,6 @@ boton.onclick = function(){
     let confirmar = confirm('¿Estas Seguro? Todas las canciones seran eliminadas de tu playlist')
     if(confirmar == true){
         localStorage.removeItem('playlist');
+        document.location.reload(true);
     }
 }

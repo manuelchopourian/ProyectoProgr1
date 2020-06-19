@@ -162,7 +162,7 @@ footer ul{
         grid-template-rows: 100px 1750px 100px
     }
     .barra ul{
-        padding-top: 4.4vh;
+        padding-top: 29px;
     }
     .generos{
         grid-template-columns: repeat(5, 1fr);

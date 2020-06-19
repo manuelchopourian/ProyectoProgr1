@@ -65,6 +65,10 @@ header .logo{
     text-align: center;
     padding: 15px;
 }
+.boton:hover{
+    border: none;
+    text-decoration: none;
+}
 .listadereproduccion{
     text-align: center;
     position: relative;

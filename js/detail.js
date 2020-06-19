@@ -17,7 +17,7 @@ fetch(url)
         titulo.innerHTML += datos.title + '</a>'
 
         let foto = document.querySelector('.portada');
-        foto.src = datos.album.cover
+        foto.src = datos.album.cover_big
         
         let interprete = document.querySelector('.interprete');
         interprete.innerHTML += '<a href="artista.html?id='+ datos.artist.id + '">' + datos.artist.name + '</a>'
@@ -29,8 +29,8 @@ fetch(url)
         duracion.innerHTML += datos.duration + ' segundos'
 
         //Aquí agregamos el player.
-        let player = document.querySelector('iframe');
-        player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=90&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'     
+        let player = document.querySelector('.player');
+        player.innerHTML =  '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=90%&height=63&color=25DFCF&layout=&size=medium&type=tracks&id=' + idTrack + '&app_id=1" width="90%" height="63"></iframe>'    
     })
     .catch(function (error) {
         console.log(error);

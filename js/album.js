@@ -30,14 +30,13 @@ fetch(ruta)
     return datas.json()
 })
 
-.then(function(data){
-    let cancion = data.data;
+.then(function(datos){
+    let cancion = datos.data;
     let tops = document.querySelector('.popular-song'); 
-    let toptracks = '';
+    
     for(let i=0; i<5; i++){
-      toptracks += '<li><a class="hipervinculo" href= detail.html?id=' + cancion[i].id + '>' + cancion[i].title + '</a></li>';
+    tops.innerHTML+= '<li><a class="hipervinculo" href= detail.html?id=' + cancion[i].id + '>' + cancion[i].title + '</a></li>';
     }
-    tops.innerHTML+= toptracks;
 })
 
 .catch(function(error){
