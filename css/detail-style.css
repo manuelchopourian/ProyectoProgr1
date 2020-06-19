@@ -67,9 +67,6 @@ h1{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.data.agregar{
-    font-size: 16px;
-}
 .data a{
     color:rgb(37, 223, 208)
 }
@@ -78,7 +75,7 @@ h1{
 }
 .escuchar{
     position: relative;
-    top: 75px;
+    top: 90px;
 }
 .extras{
     display: grid;
@@ -91,7 +88,7 @@ h1{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 70px;
+    top: 85px;
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -125,10 +122,10 @@ footer ul{
 }
 @media(min-width:375px){
 .escuchar{
-    top: 31px;
+    top: 46px;
 }
 .extras a{
-    top: 27px;
+    top: 38px;
 }
 }
 @media(min-width: 425px){
@@ -137,15 +134,15 @@ footer ul{
     }
     .player iframe{
         position: relative;
-        top: 25px;
+        top: 8px;
     }
     .extras a{
-        top: 50px;
+        top: 45px;
     }
 }
 @media(min-width: 768px){
     .grid-container{
-        grid-template-rows: 80px 870px 90px
+        grid-template-rows: 80px 887px 90px
     }
     .barra ul{
         padding-top: 3.1%;
@@ -175,7 +172,7 @@ footer ul{
         top: 30px;
     }
     .extras a{
-        top: 50px;
+        top: 60px;
         font-size: 14px;
     }
     footer{
@@ -192,31 +189,46 @@ footer ul{
         background-color: rgba(54, 54, 54, 0.911) ;
     }
     .grid-container{
-        grid-template-rows: 100px 1750px 100px
+        grid-template-rows: 100px 1100px 100px
     }
     .barra ul{
-        padding-top: 29px;
+        padding-top: 3.5%;
     }
-    .generos{
-        grid-template-columns: repeat(5, 1fr);
-        margin: 0px 15px;
-        gap: 0px 15px;
-    }
-    .info{
-        grid-template-rows: 90% 10%;
-        height: 250px;
-
-    }
-    .nombre{
-        position: relative;
-        top: 5px;
-    }
-    h2{
-        padding-top: 1%;
-        font-size: 30px;
-    }
-    .portadas{
-        height: 95%;
+    .portada{
+        width: 40%;
+        margin: auto;
         border-radius: 10px;
     }
+    h1{
+        font-size: 50px;
+    }
+    .data{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .player iframe{
+        top: 260px;
+    }
+    .extras a{
+        top: 300px;
+    }
+
+}
+@media(min-width: 1440px){
+    .grid-container{
+        grid-template-rows: 100px 1210px 100px
+    }
+    .barra ul{
+        padding-top: 2.7%;
+
+    }
+    .player iframe{
+        top: 195px;
+    }
+    .extras a{
+        top: 230px;
+    }
+
 }

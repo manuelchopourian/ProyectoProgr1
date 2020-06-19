@@ -20,7 +20,7 @@ fetch(id)
 
         h2.innerHTML += resultado.name
         h3.innerHTML += resultado.nb_fan + " Seguidores"  
-       div.innerHTML = '<img src="' + resultado.picture_big + '">' 
+       div.innerHTML = '<img src="' + resultado.picture_xl + '">' 
 
     //    const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     })
@@ -37,6 +37,6 @@ fetch(id)
         let nombre = datos.data;
 
         nombre.forEach(function(track){
-            top.innerHTML += '<li class="info">' +'<a href="detail.html?id=' +  track.id + '"><img src="' + track.album.cover +'" class="portadas">' + '</a> <a href="detail.html?id=' +  track.id + '">' + track.title + '</a></li>'
+            top.innerHTML += '<li class="info">' +'<a href="detail.html?id=' +  track.id + '"><img src="' + track.album.cover_big +'" class="portadas">' + '</a> <a href="detail.html?id=' +  track.id + '">' + track.title + '</a></li>'
         })
     })
